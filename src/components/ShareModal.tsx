@@ -42,7 +42,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({
   } else if (networkMode === 'lan') {
     activeShareUrl = `http://${DETECTED_LAN_IP}:5173/${hashPart}`;
   } else if (networkMode === 'public') {
-    const domain = customPublicDomain.trim() || 'https://felix6328.github.io/link-bouquet';
+    const domain = customPublicDomain.trim() || 'https://felix6328.github.io/flower_linkpost';
     activeShareUrl = `${domain.replace(/\/+$/, '')}/${hashPart}`;
   } else {
     activeShareUrl = rawUrl;
